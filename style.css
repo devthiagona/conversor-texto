@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* color: white;
+  background: black; */
+  font-family: "Chakra Petch", sans-serif;
+}
+
+:root {
+  --color1: #20130a;
+  --color2: #142026;
+  --color3: #123142;
+  --color3-1: #12314296;
+  --bg-color-body: #3b657a;
+  --bg-color-main: #e9f0c9;
+}
+
+body {
+  display: block;
+  height: 100vh;
+}
+
+.cabecalho {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--bg-color-main);
+  border-bottom: #20130a solid 0.4px;
+  /* position: fixed; */
+}
+.cabecalho h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--color1);
+  font-family: "Chakra Petch", sans-serif;
+}
+
+#links {
+  padding: 0 10px 0 10px;
+  text-decoration: none;
+  color: var(--color3);
+  font-weight: 600;
+  /* background-color: var(--bg-color-body); */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#primeira-section {
+  width: 100%;
+  height: 768px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--bg-color-body); */
+  background-image: url(./img/bg-footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 40%;
+}
+#segunda-section {
+  width: 100%;
+  height: 768px;
+  background-color: var(--color2);
+  padding: 40px;
+  color: var(--bg-color-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-1-s2 {
+  text-align: center;
+  margin: 25px 0;
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+}
+.title-s2 {
+  text-align: center;
+  margin: 25px 0;
+  font-size: 40px;
+}
+#segunda-section p {
+  width: 30%;
+  text-align: justify;
+}
+
+form {
+  background-color: var(--bg-color-main);
+  opacity: 0.9;
+  height: 25rem;
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 1px -3px 5px var(--color1);
+}
+.input {
+  display: flex;
+  flex-direction: column;
+}
+.caixa {
+  display: flex;
+}
+
+.input label {
+  margin-bottom: 10px;
+}
+.limpar {
+  color: white;
+  width: 4rem;
+  padding: 5px;
+  border-radius: 30px;
+  margin-top: 10px;
+  border: transparent;
+  background-color: var(--bg-color-body);
+  height: 1.9rem;
+  font-weight: 600;
+  font-size: 10px;
+}
+.input input:hover {
+  background-color: var(--color3);
+  cursor: pointer;
+}
+#inTexto {
+  height: 12rem;
+  width: 20rem;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.411);
+  border: none;
+  box-shadow: 3px 3px 3px var(--color1);
+  outline: none;
+  resize: none;
+}
+
+.outSaida {
+  margin: 18px 0 18px 18px;
+}
+
+.outSaida textarea {
+  background-color: #bbbcbd85;
+  height: 12.1rem;
+  width: 20rem;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px var(--color1);
+  outline: none;
+  resize: none;
+}
+.btn {
+  margin-top: 22px;
+}
+.btn input:hover {
+  background-color: var(--color3);
+  cursor: pointer;
+}
+.btn input {
+  padding: 5px;
+  border-radius: 30px;
+  outline: none;
+  border: transparent;
+  color: white;
+  background-color: var(--bg-color-body);
+  width: 6.5rem;
+  height: 1.9rem;
+  font-weight: 600;
+  font-size: 10px;
+  margin-top: 15px;
+}
+
+.car-pala {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.caixa-res {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding-top: 10px;
+  width: 20rem;
+}
+#caracter,
+#palavras {
+  font-size: 12px;
+  margin-top: 8px;
+  text-align: center;
+  width: 8rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem;
+  height: 20%;
+  background-image: url(./img/bg-footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  color: white;
+}
+footer h2 {
+  font-size: 20px;
+}
+.contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  font-weight: 600;
+}
+.contatos a {
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--bg-color-body);
+  padding: 5px;
+  width: 6rem;
+  text-align: center;
+  border-radius: 5px;
+}
+.contatos a:hover {
+  background-color: var(--color3);
+}
+footer .name {
+  color: var(--color1);
+  font-weight: 700;
+  background-color: #ffffff60;
+  padding: 5px;
+  border-radius: 8px;
+}

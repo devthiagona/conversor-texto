@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Textos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1 class="title-header">Conversor</h1>
+
+      <nav>
+        <a id="links" href="#segunda-section">Como funciona?</a>
+        <a id="links" href="https://wa.me/5562992118162/" target="_blank"
+          >Contato</a
+        >
+      </nav>
+    </header>
+    <main>
+      <section id="primeira-section">
+        <form>
+          <div class="input">
+            <label for="inTexto">Copie seu texto aqui 👇</label>
+            <textarea
+              name="inTexto"
+              id="inTexto"
+              placeholder="Digite/cole seu texto aqui!"
+            ></textarea>
+            <div class="caixa-res">
+              <p id="palavras">0 Palavras(s)</p>
+              <p id="caracter">0 Caracter(s)</p>
+            </div>
+            <input
+              class="limpar"
+              type="button"
+              value="Limpar"
+              onclick="limpar()"
+            />
+          </div>
+          <div class="outSaida">
+            <textarea
+              id="outSaida"
+              placeholder="Seu Texto Saira Aqui"
+            ></textarea>
+            <div class="btn">
+              <input
+                type="button"
+                value="MAIÚSCULA"
+                onclick="converterMaiuscula()"
+              />
+              <input
+                type="button"
+                value="Minúscula"
+                onclick="converterMinuscula()"
+              />
+              <input
+                id="primeiraMaiuscula"
+                type="button"
+                onclick="pM()"
+                value="Primeira Maiúscula"
+              />
+            </div>
+          </div>
+        </form>
+      </section>
+      <section id="segunda-section">
+        <h1 class="title-1-s2">
+          Como funciona o conversor de Maiúsculas e minúsculas?
+        </h1>
+        <h3 class="title-s2">Minúsculas</h3>
+        <p>
+          Se você está se perguntando como descapitalizar o texto, é exatamente
+          isso que o conversor de texto em minúsculas permitirá que você faça -
+          ele transforma todas as letras do seu texto em letras minúsculas.
+          Basta copiar o texto que você precisa gerar em letras minúsculas e
+          colar o texto na caixa acima e selecionar a guia 'minúsculas'. este é
+          um exemplo de minúsculas.
+        </p>
+        <h3 class="title-s2">Maiúsculas</h3>
+        <p>
+          O transformador de maiúsculas pegará qualquer texto que você tenha e
+          gerará todas as letras em maiúsculas. Ele essencialmente transformará
+          todas as letras minúsculas em MAIÚSCULAS (assim como manterá as letras
+          maiúsculas como letras maiúsculas). Para fazer isso, basta selecionar
+          o texto que você precisa alterar e colar na caixa acima e selecionar a
+          guia MAIÚSCULAS. ESTE É UM EXEMPLO DE MAIÚSCULAS.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <h2>Feito por: <span class="name">THIAGO NASCIMENTO 😎🤘</span></h2>
+      <div class="contatos">
+        <p>Contatos:</p>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com.br/" target="_blank">LinkedIn</a>
+        <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+      </div>
+    </footer>
+    <script src="./index2.js"></script>
+  </body>
+</html>
