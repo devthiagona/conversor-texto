@@ -61,7 +61,7 @@ main {
   justify-content: center;
   align-items: center;
   /* background-color: var(--bg-color-body); */
-  background-image: url(./img/bg-footer.jpg);
+  background-image: url(bg-footer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 20% 40%;
