@@ -207,7 +207,7 @@ footer {
   align-items: center;
   padding: 4rem;
   height: 20%;
-  background-image: url(./img/bg-footer.jpg);
+  background-image: url(bg-footer.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
