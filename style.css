@@ -32,7 +32,14 @@ body {
   border-bottom: #20130a solid 0.4px;
   /* position: fixed; */
 }
+.cabecalho img {
+  display: none;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
 .cabecalho h1 {
+  margin-left: 50px;
   font-weight: 700;
   font-size: 40px;
   color: var(--color1);
@@ -151,16 +158,18 @@ form {
 .outSaida textarea {
   background-color: #bbbcbd85;
   height: 12.1rem;
-  width: 20rem;
+  width: 26.5rem;
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 41px;
   border-radius: 8px;
   box-shadow: 3px 3px 3px var(--color1);
   outline: none;
   resize: none;
+  margin-top: 4.5rem;
 }
 .btn {
-  margin-top: 22px;
+  margin-top: 25px;
+  position: relative;
 }
 .btn input:hover {
   background-color: var(--color3);
@@ -177,7 +186,6 @@ form {
   height: 1.9rem;
   font-weight: 600;
   font-size: 10px;
-  margin-top: 15px;
 }
 
 .car-pala {
@@ -189,7 +197,6 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
   padding-top: 10px;
   width: 20rem;
 }
@@ -213,18 +220,19 @@ footer {
   background-size: cover;
   opacity: 0.8;
   color: white;
+  gap: 2rem;
 }
 footer h2 {
   font-size: 20px;
 }
-.contatos {
+#contatos {
   display: flex;
   flex-direction: column;
   gap: 8px;
   align-items: center;
   font-weight: 600;
 }
-.contatos a {
+#contatos a {
   text-decoration: none;
   color: #fff;
   background-color: var(--bg-color-body);
@@ -232,8 +240,9 @@ footer h2 {
   width: 6rem;
   text-align: center;
   border-radius: 5px;
+  border: 0.2px solid var(--color1);
 }
-.contatos a:hover {
+#contatos a:hover {
   background-color: var(--color3);
 }
 footer .name {
@@ -242,4 +251,124 @@ footer .name {
   background-color: #ffffff60;
   padding: 5px;
   border-radius: 8px;
+}
+footer a img {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .cabecalho {
+    width: 100%;
+    height: 10%;
+    position: relative;
+  }
+  .cabecalho h1 {
+    display: none;
+  }
+  .cabecalho img {
+    display: block;
+  }
+  main {
+    width: 100%;
+  }
+  #primeira-section {
+    width: 100%;
+  }
+  form {
+    width: 95%;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.95;
+  }
+  .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #inTexto {
+    margin-left: 18px;
+  }
+  .caixa-res {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    width: 20rem;
+    margin-left: 12px;
+  }
+  .caixa-res .limpar {
+    width: 8rem;
+  }
+
+  #caracter,
+  #palavras {
+    font-size: 12px;
+    margin-top: 8px;
+    text-align: center;
+    width: 8rem;
+  }
+  .outSaida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .outSaida textarea {
+    background-color: #bbbcbd85;
+    padding: 10px;
+    width: 20rem;
+  }
+  .btn {
+    margin-left: 10px;
+  }
+  .btn input {
+    width: 6rem;
+  }
+
+  .btn input:hover {
+    background-color: var(--color3);
+    cursor: pointer;
+  }
+  #segunda-section {
+    width: 100%;
+    height: 80%;
+    padding: 5px;
+  }
+  .title-1-s2 {
+    font-size: 19px;
+    font-weight: 700;
+  }
+  .title-s2 {
+    text-align: center;
+    font-size: 18px;
+  }
+  #segunda-section p {
+    width: 95%;
+    text-align: center;
+    margin: 5px;
+  }
+  footer h2 {
+    font-size: 0.9rem;
+    text-align: center;
+    /* background-color: #ffffff6c; */
+    padding: 5px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+  }
+  footer .name {
+    background: none;
+    font-weight: 700;
+    color: #000000;
+  }
+  footer #contatos {
+    color: #20130a;
+  }
 }
