@@ -8,13 +8,12 @@
   </head>
   <body>
     <header class="cabecalho">
+      <img src="./logo.png" alt="" />
       <h1 class="title-header">Conversor</h1>
 
       <nav>
         <a id="links" href="#segunda-section">Como funciona?</a>
-        <a id="links" href="https://wa.me/5562992118162/" target="_blank"
-          >Contato</a
-        >
+        <a id="links" href="#contatos">Contato</a>
       </nav>
     </header>
     <main>
@@ -31,12 +30,6 @@
               <p id="palavras">0 Palavras(s)</p>
               <p id="caracter">0 Caracter(s)</p>
             </div>
-            <input
-              class="limpar"
-              type="button"
-              value="Limpar"
-              onclick="limpar()"
-            />
           </div>
           <div class="outSaida">
             <textarea
@@ -45,8 +38,14 @@
             ></textarea>
             <div class="btn">
               <input
+                class="limpar"
                 type="button"
-                value="MAIÚSCULA"
+                value="Limpar"
+                onclick="limpar()"
+              />
+              <input
+                type="button"
+                value="Maiúscula"
                 onclick="converterMaiuscula()"
               />
               <input
@@ -58,7 +57,7 @@
                 id="primeiraMaiuscula"
                 type="button"
                 onclick="pM()"
-                value="Primeira Maiúscula"
+                value="1° letra Maiúscula"
               />
             </div>
           </div>
@@ -89,13 +88,14 @@
       </section>
     </main>
     <footer>
-      <h2>Feito por: <span class="name">THIAGO NASCIMENTO 😎🤘</span></h2>
-      <div class="contatos">
+      <h2>Feito por: <br /><span class="name">THIAGO NASCIMENTO 😎🤘</span></h2>
+      <div id="contatos">
         <p>Contatos:</p>
         <a href="https://www.instagram.com/" target="_blank">Instagram</a>
         <a href="https://www.linkedin.com.br/" target="_blank">LinkedIn</a>
         <a href="https://www.youtube.com/" target="_blank">YouTube</a>
       </div>
+      <a href="#primeira-section"><img src="./seta.svg" alt="" /></a>
     </footer>
     <script src="./index2.js"></script>
   </body>
